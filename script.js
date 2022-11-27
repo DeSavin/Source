@@ -18077,7 +18077,7 @@ var images = function images() {
   var imgPopup = document.createElement('div'),
       workSection = document.querySelector('.works'),
       bigImg = document.createElement('img');
-  imgPopup.classList.add('popup');
+  imgPopup.classList.add('popup_img');
   workSection.appendChild(imgPopup);
   imgPopup.style.justifyContent = 'center';
   imgPopup.style.alignItems = 'center';
@@ -18101,7 +18101,7 @@ var images = function images() {
       bigImg.setAttribute('src', path);
     }
 
-    if (target && target.matches('div.popup')) {
+    if (target && target.matches('div.popup_img')) {
       document.body.style.overflow = '';
       document.body.style.marginRight = "0px";
       imgPopup.style.display = 'none';
